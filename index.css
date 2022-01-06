@@ -50,10 +50,41 @@
   #submit {
     width: 80px;
     margin-left: 10px;
+    font-weight: 900;
+background-color: white;
+border: none;
   }
   
   ol {
     margin-top: 15px;
     font-weight: 600;
-    color: black;
+    color: white;
   }
+
+
+  @media screen and (max-width:1280px) {
+    .container {
+      width: 80%;
+    }
+  }
+
+  @media screen and (max-width:426px) {
+
+    .container {
+        width: 75%;
+    }
+    .title {
+        font-size: 1.5rem;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        font-size: 0.75rem;
+    }
+
+    #submit {
+        display: block;
+        width: 100%;;
+  }
+}
